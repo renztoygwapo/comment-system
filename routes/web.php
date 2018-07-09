@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('comments', 'CommentController@index');
+Route::post('comments/create', 'CommentController@store');
